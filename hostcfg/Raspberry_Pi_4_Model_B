@@ -1,0 +1,105 @@
+#  Raspberry Pi 4B Host Controller Configuration File
+#  (C) Copyright for File Contents and Format
+#  2024 Myke Predko
+HOSTNAME: rPi 4B
+STATUS: Released
+MATCHNAME: Raspberry Pi 4 Model B Rev 1.5
+CONNECTIONS:
+USB 
+Serial
+BLOCKDIAGRAM:
++-----------+-----+-----------+
+|O          |     |          O|
++---+       |     |        x x|
+|   |USBC   |     |        x x|
+|   |Power  +-----+        x x|
++---+       SD Card        x x|
+|            Slot          x x|
+|                          x x|
++---+                      x x|
+|   |HDMI0                 x x|
++---+                      x x|
+|                          x x|
+|                          x x|
++---+                      x x|
+|   |HDKI1                 x x|
++---+                      x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                             |
+|O  USB      USB      E'Net  O|
+| +-----+  +-----+  +-------+ |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
++-+-----+--+-----+--+-------+-+
+EMBEDDEDUSBCONNECTION:
+USBCONNECTION:
++-----------+-----+-----------+
+|O          |     |          O|
++---+       |     |        x x|
+|   |USBC   |     |        x x|
+|   |Power  +-----+        x x|
++---+       SD Card        x x|
+|            Slot          x x|
+|                          x x|
++---+                      x x|
+|   |HDMI0                 x x|
++---+                      x x|
+|                          x x|
+|                          x x|
++---+                      x x|
+|   |HDKI1                 x x|
++---+                      x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                             |
+|O  USB      USB      E'Net  O|
+| +-----+  +-----+  +-------+ |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
++-+-----+--+-----+--+-------+-+
+              |
+              +--> USB to MCU
+SERIALCONNECTION:
++-----------+-----+-----------+
+|O          |     |          O|
++---+       |     |        x +--- 5V (2A)
+|   |USBC   |     |        x +--- 5V (2A)
+|   |Power  +-----+        x +--- GND
++---+       SD Card        x +---> UART RX
+|            Slot          x +---< UART TX
+|                          x x|
++---+                      x x|
+|   |HDMI0                 x x|
++---+                      x x|
+|                          x x|
+|                          x x|
++---+                      x x|
+|   |HDKI1                 x x|
++---+                      x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                          x x|
+|                             |
+|O  USB      USB      E'Net  O|
+| +-----+  +-----+  +-------+ |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
+| |     |  |     |  |       | |
++-+-----+--+-----+--+-------+-+
