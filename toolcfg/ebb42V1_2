@@ -1,0 +1,82 @@
+[mcu toolhead]
+#
+# NOTE: This is a System Generated File
+#
+# DO NOT attempt to edit this file as
+# unexpected printer behaviour may 
+# result 
+#
+# board="EBB42 V1.2"
+# canbus_speed=%%%000
+canbus_uuid: @@@
+# home_directory=&&&
+
+[temperature_sensor toolhead_temp]
+sensor_type: temperature_mcu
+[temperature_sensor toolhead_temp]
+sensor_type: temperature_mcu
+sensor_mcu: toolhead
+min_temp: 0
+max_temp: 100
+
+
+[board_pins]
+aliases:
+# Extruder
+    TOOLHEAD_PWM=toolhead:PB13,
+    TOOLHEAD_THERMISTOR=toolhead:PA3,    # 4k7 pull up
+    TOOLHEAD_HEATSINKFAN=toolhead:PA0,   # "FAN1" on PCB/Schematics
+
+    TOOLHEAD_PARTFAN=toolhead:PA1,       # "FAN2" on PCB/Schematics
+
+# PT100(0) MAX31865 SPI - For more information see:
+# https://github.com/bigtreetech/EBB/blob/master/EBB CAN V1.1 (STM32G0B1)/EBB42 CAN V1.1/Hardware/EBB42 CAN V1.1&V1.2-PIN.png
+    TOOLHEAD_MAXCS=toolhead:PA4,
+    TOOLHEAD_MAXSCLK=toolhead:PA5,
+    TOOLHEAD_MAXMISO=toolhead:PA6,
+    TOOLHEAD_MAXMOSI=toolhead:PA7,
+
+# Endstop Connector
+    TOOLHEAD_ENDSTOP5V=<5V>,             # Pin 1 of 5 pin connector
+    TOOLHEAD_ENDSTOPGND=<GND>,
+    TOOLHEAD_ENDSTOP1=toolhead:PB6,
+    TOOLHEAD_ENDSTOP2=toolhead:PB5,
+    TOOLHEAD_ENDSTOP3=toolhead:PB7,
+
+# BL Touch Connector
+    TOOLHEAD_BLGND1=<GND>,
+    TOOLHEAD_BL5V=<5V>,
+    TOOLHEAD_BLSERVO=toolhead:PB9,
+    TOOLHEAD_BLGND2=<GND>
+    TOOLHEAD_BLPROBE=toolhead:PB8
+
+# TMC2209 Extruder Stepper Motor Driver
+    TOOLHEAD_TMCEN=toolhead:PD2,
+    TOOLHEAD_TMCSTEP=toolhead:PD0,
+    TOOLHEAD_TMCDIR=toolhead:PD1,
+    TOOLHEAD_TMCUART=toolhead:PA15,
+    TOOLHEAD_TMCDIAG=toolhead:PB12       # Not required for normal operation
+
+# ADXL345 Accelerometer
+    TOOLHEAD_ADXLCS=toolhead:PB12,
+    TOOLHEAD_ADXLSCLK=toolhead:PB10,
+    TOOLHEAD_ADXLMISO=toolhead:PB2,
+    TOOLHEAD_ADXLMOSI=toolhead:PB11,
+
+# NeoPixel LED Connector
+    TOOLHEAD_LEDGND=<GND>                # Pin 1 of 3 Pin Connector
+    TOOLHEAD_LEDSERIAL=toolhead:PD3
+    TOOLHEAD_LED5V=<5V>
+
+# I2C Connector
+    TOOLHEAD_I2C5V=<5V>                  # Pin 1 of 4 Pin Connector
+    TOOLHEAD_I2CGND=<GND>
+    TOOLHEAD_I2CSCL=toolhead:PB3
+    TOOLHEAD_I2CSDA=toolhead:PB4
+
+# Communications
+    TOOLHEAD_CANTX=toolhead:PB1,
+    TOOLHEAD_CANRX=toolhead:PB0,
+
+    TOOLHEAD_USBDP=toolhead:PA12,
+    TOOLHEAD_USBDM=toolhead:PA11
