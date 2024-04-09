@@ -17,11 +17,8 @@ NONE
 KLIPPERSERIALCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (Raspberry Pi RP2040) --->
-Processor model (STM32G0B1) --->
-Bootloader offset (8KiB bootloader) --->
-Clock Reference (8 MHz crystal) --->
 Communication interface (Serial (on UART0 GPIO1/GPIO0))
-(115200) Baud rate for serial port
+(250000) Baud rate for serial port
 KLIPPERUSBCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (Raspberry Pi RP2040) --->
