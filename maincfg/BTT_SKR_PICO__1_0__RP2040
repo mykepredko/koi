@@ -32,13 +32,13 @@ BLOCKDIAGRAM:
        +---|           +--\+---+---+-+
        |O / \          |   \     O +---+
      +-+-+|  \---------+   |       |USB|
-     |Ser||\---------------/       +---+
-     |ial|+-+---\-\-\-\-\--+       +---+
+     |Ser||\---------------/  x x  +---+
+     |ial|+-+---\-\-\-\-\--+  USB  +---+
      |   |                         |   |
      +-+-+                         |   |
      +-+-+                         |   |
-     |   |                         +---+ 
-     +-+-+                          +--+
+     |   |           x x           +---+ 
+     +-+-+           Boot           +--+
      +-+-+                          |  |
      |   |                          +--+
      +-+-+                          +--+
@@ -57,13 +57,13 @@ USBMSSFIRMWARELOADUSBPOWER:
        +---|           +--\+---+---+-+
        |O / \          |   \     O +---+
      +-+-+|  \---------+   |       |USB|<-+
-     |Ser||\---------------/       +---+  |
-     |ial|+-+---\-\-\-\-\--+       +---+  |
+     |Ser||\---------------/  x=x  +---+  |
+     |ial|+-+---\-\-\-\-\--+  USB  +---+  |
      |   |                         |   |  U
      +-+-+                         |   |  S
      +-+-+                         |   |  B
-     |   |                         +---+ 
-     +-+-+                          +--+
+     |   |           x=x           +---+ 
+     +-+-+           Boot           +--+
      +-+-+                          |  |
      |   |                          +--+
      +-+-+                          +--+
@@ -73,6 +73,7 @@ USBMSSFIRMWARELOADUSBPOWER:
        |O +--++--++---++---++---+O  |  |
        +--+  ++  ++   ++   ++   +---+--+
           +--++--++---++---++---+     
-1. Disconnect all Cables
-2. Connect USB C cable between Host and BTT Pico
-3. Follow instructions
+1. Disconnect all Cables to BTT Pico
+2. Attach Jumpers to the BOOT and USB Pins
+3. Connect USB C cable between Host and BTT Pico
+4. Follow instructions
