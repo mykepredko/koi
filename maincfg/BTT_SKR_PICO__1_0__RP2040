@@ -1,0 +1,84 @@
+#  BigTreeTech SKR Pico V1.0 Main Controller Configuration File
+#  (C) Copyright for File Contents and Format
+#  2024 Myke Predko
+MAINNAME: BTT SKR Pico V1.0
+STATUS: Released
+PROCESSOR: RP2040
+VERSION: 1.0
+KLIPPERFIRMWARELOAD:
+USB MSS
+KLIPPERFIRMWARENAME:
+firmware.bin
+KLIPPERCONNECTIONS:
+USB
+Serial
+BUILTINCAN:
+NONE
+KLIPPERSERIALCONFIGURATION:
+[*] Enable extra low-level configuration options
+Micro-controller Architecture (Raspberry Pi RP2040) --->
+Processor model (STM32G0B1) --->
+Bootloader offset (8KiB bootloader) --->
+Clock Reference (8 MHz crystal) --->
+Communication interface (Serial (on UART0 GPIO1/GPIO0))
+(115200) Baud rate for serial port
+KLIPPERUSBCONFIGURATION:
+[*] Enable extra low-level configuration options
+Micro-controller Architecture (Raspberry Pi RP2040) --->
+Communication interface (USB)
+BLOCKDIAGRAM:
+           +---+---+---+---+   +---+
+           +----------\|   |   |   |
+       +---|           +--\+---+---+-+
+       |O / \          |   \     O +---+
+     +-+-+|  \---------+   |       |USB|
+     |Ser||\---------------/       +---+
+     |ial|+-+---\-\-\-\-\--+       +---+
+     |   |                         |   |
+     +-+-+                         |   |
+     +-+-+                         |   |
+     |   |                         +---+ 
+     |   |                          +--+
+     +-+-+                          |  |
+     +-+-+                          |  |
+     |   |                          +--+
+     |   |                          +--+
+     +-+-+                          |  |
+     +-+-+                          |  |
+     |   |    /\ Reset              +--+
+     |   |    \/                    +--+
+     +-+-+                          |  |
+       |O +--++--++---++---++---+O  |  |
+       +--+  ++  ++   ++   ++   +---+--+
+          +--++--++---++---++---+     
+SDCARDFIRMARELOADUSBPOWER:
+SDCARDFIRMARELOADSYSTEMPOWER:
+DFUFIRMARELOADSYSTEMPOWER:
+USBMSSFIRMWARELOADUSBPOWER:
+           +---+---+---+---+   +---+
+           +----------\|   |   |   |
+       +---|           +--\+---+---+-+
+       |O / \          |   \     O +---+
+     +-+-+|  \---------+   |       |USB|<-+
+     |Ser||\---------------/       +---+  |
+     |ial|+-+---\-\-\-\-\--+       +---+  U
+     |   |                         |   |  S
+     +-+-+                         |   |  B
+     +-+-+                         |   |
+     |   |                         +---+ 
+     |   |                          +--+
+     +-+-+                          |  |
+     +-+-+                          |  |
+     |   |                          +--+
+     |   |                          +--+
+     +-+-+                          |  |
+     +-+-+                          |  |
+     |   |    /\ Reset              +--+
+     |   |    \/                    +--+
+     +-+-+                          |  |
+       |O +--++--++---++---++---+O  |  |
+       +--+  ++  ++   ++   ++   +---+--+
+          +--++--++---++---++---+     
+1. Disconnect all Cables
+2. Connect USB C cable between Host and BTT Pico
+3. Follow instructions
