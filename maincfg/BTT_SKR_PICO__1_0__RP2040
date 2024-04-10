@@ -42,13 +42,13 @@ BLOCKDIAGRAM:
      +-+-+    /\ Reset              |  |
      |   |    \/                    +--+
      +-+-+                          +--+
+       |                            |  |
        |O +--++--++---++---++---+O  |  |
        +--+  ++  ++   ++   ++   +---+--+
           +--++--++---++---++---+     
-SDCARDFIRMARELOADUSBPOWER:
-SDCARDFIRMARELOADSYSTEMPOWER:
-DFUFIRMARELOADSYSTEMPOWER:
-USBMSSFIRMWARELOADUSBPOWER:
+SDCARDFIRMARELOAD:
+DFUFIRMARELOAD:
+USBMSSFIRMWARELOADR:
            +---+---+---+---+   +---+
            +----------\|   |   |   |
        +---|           +--\+---+---+-+
@@ -67,7 +67,8 @@ USBMSSFIRMWARELOADUSBPOWER:
      +-+-+    /\ Reset              |  |
      |   |    \/                    +--+
      +-+-+                          +--+
-       |O +--++--++---++---++---+O  |  |
+       |                            |  |<-PWR
+       |O +--++--++---++---++---+O  |  |<+PWR
        +--+  ++  ++   ++   ++   +---+--+
           +--++--++---++---++---+     
 1. Disconnect all Cables to BTT Pico
