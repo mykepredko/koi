@@ -7,15 +7,11 @@ PROCESSOR: RP2040
 VERSION: 1.0
 KLIPPERFIRMWARELOAD:
 MSS
-KLIPPERFIRMWARENAME:
-firmware.bin
-KLIPPERCONNECTIONS:
-USB
+KLIPPERFIRMWARENAME: firmware.bin
+KLIPPERCONNECTIONS: USB
 Serial
-KLIPPERPRINTERCFG:
-generic-bigtreetech-skr-pico-v1.0
-BUILTINCAN:
-NONE
+KLIPPERPRINTERCFG: generic-bigtreetech-skr-pico-v1.0
+BUILTINCAN: NONE
 KLIPPERSERIALCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (Raspberry Pi RP2040) --->
