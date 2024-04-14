@@ -48,7 +48,7 @@ BLOCKDIAGRAM:
           +--++--++---++---++---+       
 SDCARDFIRMARELOAD:
 DFUFIRMARELOAD:
-USBMSSFIRMWARELOAD:
+MSSFIRMWARELOAD:
            +---+---+---+---+   +---+
            +----------\|   |   |   |
        +---|           +--\+---+---+-+
