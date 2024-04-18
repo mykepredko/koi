@@ -4,8 +4,7 @@
 HOSTNAME: BTT Pi
 STATUS: Released
 MATCHNAME: BTT Pi
-CONNECTIONS:
-USB
+CONNECTIONS: USB
 Serial
 BLOCKDIAGRAM:
 +-----------+-----+-----------+
