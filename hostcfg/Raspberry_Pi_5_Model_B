@@ -4,8 +4,7 @@
 HOSTNAME: rPi 5B
 STATUS: Released
 MATCHNAME: Raspberry Pi 5 Model B
-CONNECTIONS:
-USB
+CONNECTIONS: USB
 Serial
 BLOCKDIAGRAM:
 +-----------+-----+-----------+
