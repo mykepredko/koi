@@ -1,0 +1,75 @@
+#  BigTreeTech SKR Mini E3 V3 Main Controller Configuration File
+#  (C) Copyright for File Contents and Format
+#  2024 Myke Predko
+FULLNAME: BTT SKR Mini E3 V3
+MAINNAME: SKR Mini E3
+STATUS: Released
+PROCESSOR: STM32G0B1
+VERSION: 3.0
+FIRMWARELOAD: SD Card
+FIRMWARENAME: firmware.bin
+CONNECTIONS: USB
+Serial
+KLIPPERPRINTERCFG: generic-bigtreetech-skr-mini-e3-v3.0
+BUILTINCAN: NONE
+KLIPPERSERIALCONFIGURATION:
+[*] Enable extra low-level configuration options
+Micro-controller Architecture (STMicroelectronics STM32) --->
+Processor model (STM32G0B1) --->
+Communication interface (Serial (on USART2 PA3/PA2)
+(250000) Baud rate for serial port
+KLIPPERUSBCONFIGURATION:
+[*] Enable extra low-level configuration options
+Micro-controller Architecture (STMicroelectronics STM32) --->
+Processor model (STM32G0B1) --->
+Communication interface (USB (on PA11/PA12)
+BLOCKDIAGRAM:
+     +----------------------------------+
+    / +---+ O+---++---++---++---+ 0 +----+
+   /  +---+  +---++---++---++---+   |SD  |
+   |     +------------------------+ |CARD|
+   |    /________________________/  +----+
+   |   /          /  /  /  /  / / xxxxx |
+   |  /          /__/__/__/__/_/      +--+
+   | |          /___________/_/RST xx USB|
+   |  \________/      .....     /\ xx +--+
+   | O  ..      xxxxx .....     \/ xx xx|
+   |    ..      O  .. .....       xxx xx|
+   |   xx          .. ..... GND  +-++--+|
+   |   xx  ....       x x x x x  | ||  ||
+   |+---+  .... ...    Rx Tx  PWR| ||  ||
+   ||PWR|  .... ... +-++-++--+--+| ||  ||
+   |+---+  +---+---++-++-++--+--++-++--+|
+   ||GND|  |O O|O O|  +-+-+-+-+-+-+-+   |
+   |+---+  +---+---+  +-+-+-+-+-+-+-+  O|
+   +------------------------------------+
+SDCARDFIRMARELOAD:
+     +----------------------------------+
+    / +---+ O+---++---++---++---+ 0 +----+
+   /  +---+  +---++---++---++---+   |SD  |<SD
+   |     +------------------------+ |CARD|<Card
+   |    /________________________/  +----+
+   |   /          /  /  /  /  / / xxxxx |
+   |  /          /__/__/__/__/_/      +--+
+   | |          /___________/_/RST xx USB|
+   |  \________/      .....     /\ xx +--+
+   | O  ..      xxxxx .....     \/ xx xx|
+P  |    ..      O  .. .....       xxx xx|
+W  |   xx          .. ..... GND  +-++--+|
+R  |   xx  ....       x x x x x  | ||  ||
+|   |+---+  .... ...    Rx Tx  PWR| ||  ||
++->||PWR|  .... ... +-++-++--+--+| ||  ||
+   |+---+  +---+---++-++-++--+--++-++--+|
++->||GND|  |O O|O O|  +-+-+-+-+-+-+-+   |
+|  |+---+  +---+---+  +-+-+-+-+-+-+-+  O|
+|  +------------------------------------+
+GND
+
+1. Turn off Power to Main Controller
+2. Insert SD Card
+3. Turn on Power to Main Controller
+4. Wait 1 Minute
+5. Turn off Power to Main Controller
+6. Remove SD Card
+DFUFIRMARELOAD:
+MSSFIRMWARELOAD:
