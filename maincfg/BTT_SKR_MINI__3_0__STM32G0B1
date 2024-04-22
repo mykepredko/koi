@@ -16,12 +16,16 @@ KLIPPERSERIALCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
 Processor model (STM32G0B1) --->
+Bootloader offset (8KiB bootloader (stm32duino))  --->
+Clock reference (8 MHz crystal)  --->
 Communication interface (Serial (on USART2 PA3/PA2)
 (250000) Baud rate for serial port
 KLIPPERUSBCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
 Processor model (STM32G0B1) --->
+Bootloader offset (8KiB bootloader (stm32duino))  --->
+Clock reference (8 MHz crystal)  --->
 Communication interface (USB (on PA11/PA12)
 BLOCKDIAGRAM:
      +----------------------------------+
