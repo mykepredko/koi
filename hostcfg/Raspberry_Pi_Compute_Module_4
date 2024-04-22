@@ -21,7 +21,7 @@ BLOCKDIAGRAM:
 |                             |
 |O                           O|
 +-----------------------------+
-EMBEDDEDUSBCONNECTION:
+USBEMBEDDEDCONNECTION:
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 \                                      /
 /   Socketed Main Controller Board     \
