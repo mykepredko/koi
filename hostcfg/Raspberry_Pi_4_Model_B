@@ -37,7 +37,7 @@ BLOCKDIAGRAM:
 | |     |  |     |  |       | |
 | |     |  |     |  |       | |
 +-+-----+--+-----+--+-------+-+
-EMBEDDEDUSBCONNECTION:
+USBEMBEDDEDCONNECTION:
 USBCONNECTION:
 +-----------+-----+-----------+
 |O          |     |          O|
