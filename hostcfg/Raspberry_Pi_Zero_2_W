@@ -21,7 +21,7 @@ BLOCKDIAGRAM:
 |O   |       |           |   |  |   |      O|
 +----+-------+-----------+---+--+---+-------+
  "USB - Pwr" does NOT provide Communications
-EMBEDDEDUSBCONNECTION:
+USBEMBEDDEDCONNECTION:
 USBCONNECTION:
 +-------------------------------------------+
 |O x x x x x x x x x x x x x x x x x x x x O|
