@@ -1,10 +1,10 @@
 #  BTT Pi V1.2 Host Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
-HOSTNAME: BTT Pi
-STATUS: Released
-MATCHNAME: BTT Pi
-CONNECTIONS: USB
+HOSTNAME:BTT Pi
+STATUS:Released
+MATCHNAME:BTT Pi
+CONNECTIONS:USB
 Serial
 BLOCKDIAGRAM:
 +-----------+-----+-----------+
