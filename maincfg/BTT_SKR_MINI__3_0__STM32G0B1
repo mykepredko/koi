@@ -1,17 +1,17 @@
 #  BigTreeTech SKR Mini E3 V3 Main Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
-FULLNAME: BTT SKR Mini E3 V3
-MAINNAME: SKR Mini E3
-STATUS: Released
-PROCESSOR: STM32G0B1
-VERSION: 3.0
-FIRMWARELOAD: SD Card
-FIRMWARENAME: firmware.bin
-CONNECTIONS: USB
+FULLNAME:BTT SKR Mini E3 V3
+MAINNAME:SKR Mini E3
+STATUS:Released
+PROCESSOR:STM32G0B1
+VERSION:3.0
+FIRMWARELOAD:SD Card
+FIRMWARENAME:firmware.bin
+CONNECTIONS:USB
 Serial
-KLIPPERPRINTERCFG: generic-bigtreetech-skr-mini-e3-v3.0
-BUILTINCAN: NONE
+KLIPPERPRINTERCFG:generic-bigtreetech-skr-mini-e3-v3.0
+BUILTINCAN:NONE
 KLIPPERSERIALCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
