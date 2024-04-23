@@ -1,10 +1,10 @@
 #  BigTreeTech CB1 Host Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
-HOSTNAME: BTT CB1
-STATUS: Released
-MATCHNAME: BTT CB1
-CONNECTIONS: Embedded USB
+HOSTNAME:BTT CB1
+STATUS:Released
+MATCHNAME:BTT CB1
+CONNECTIONS:Embedded USB
 USB
 Serial
 BLOCKDIAGRAM:
