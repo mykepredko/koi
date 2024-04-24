@@ -1,11 +1,7 @@
 #  BigTreeTech SKR Mini E3 V3 Main Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
-FULLNAME:MKS Robin Nano V3.1
-MAINNAME:Robin Nano V3.1
-STATUS:Released
-PROCESSOR:STM32F407
-VERSION:3.1
+MAINNAME:Robin Nano
 FIRMWARELOAD:SD Card
 Thumb Drive
 FIRMWARENAME:Robin_nano35.bin
