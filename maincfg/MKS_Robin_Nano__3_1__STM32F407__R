@@ -1,7 +1,7 @@
 #  BigTreeTech SKR Mini E3 V3 Main Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
-MAINNAME:Robin Nano
+DISPLAYNAME:Robin Nano
 FIRMWARELOAD:SD Card
 Thumb Drive
 FIRMWARENAME:Robin_nano35.bin
