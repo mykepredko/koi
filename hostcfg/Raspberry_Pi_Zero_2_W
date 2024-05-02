@@ -42,8 +42,8 @@ USBCONNECTION:
 SERIALCONNECTION:
    +-+--- 5V (2A)
    | | +--- GND 
-   | | | +---> UART RX
-   | | | | +---< UART TX
+   | | | +---> TX
+   | | | | +---< RX
    | | | | |
 +--|-|-|-|-|--------------------------------+
 |O + + + + + x x x x x x x x x x x x x x x O|
