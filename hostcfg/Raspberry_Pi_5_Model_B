@@ -77,8 +77,8 @@ SERIALCONNECTION:
 +---+       |     |        x +--- 5V (2A)
 |   |USBC   |     |        x +--- 5V (2A)
 |   |Power  +-----+        x +--- GND
-+---+       SD Card        x +---> UART RX
-|            Slot          x +---< UART TX
++---+       SD Card        x +---> TX
+|            Slot          x +---< RX
 |                          x x|
 +---+                      x x|
 |   |HDMI0                 x x|
