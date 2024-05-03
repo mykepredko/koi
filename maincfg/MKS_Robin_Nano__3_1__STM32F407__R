@@ -71,7 +71,7 @@ SDCARDFIRMARELOAD:
    ||0|  ... xx     ......     |xxx||xx|
    |+-+             ......     +---+|xx|
    |+---+                      |xxx||xx|
- R || 0 |    xx     /\  xxxx   +---+|xx|
+ P || 0 |    xx     /\  xxxx   +---+|xx|
  W |+---+           \/ x     x |xxx|+--+
  R || 0 |          Rst x     x +---+ +-+
  | |+---+              x     x |xxx|x|x|
@@ -111,7 +111,7 @@ THUMBFIRMWARELOAD:
    ||0|  ... xx     ......     |xxx||xx|
    |+-+             ......     +---+|xx|
    |+---+                      |xxx||xx|
- R || 0 |    xx     /\  xxxx   +---+|xx|
+ P || 0 |    xx     /\  xxxx   +---+|xx|
  W |+---+           \/ x     x |xxx|+--+
  R || 0 |          Rst x     x +---+ +-+
  | |+---+              x     x |xxx|x|x|
@@ -134,4 +134,35 @@ THUMBFIRMWARELOAD:
 USBEMBEDDEDCONNECTION:
 USBCONNECTION:
 SERIALCONNECTION:
+   +-----------------------------------+
+   |O xx xx +--++--++--++--++--++--+  O|
+   |        +--++--++--++--++--++--+   |
+   |+-----++-----++-----++-----++-----+|
+   ||     ||     ||     ||     ||     ||
+   ||     ||     ||     ||     ||     ||
+   |+-----++-----++-----++-----++-----+|
+   |x x xxxxxx xxxx xxxx xxxxx +---++--+
+   |x x                  xxxxx |xxx||xx|
+   |+-+                        +---+|xx|
+   ||0|  ...               xxx |xxx||xx|
+   ||0|  ... xx            xxx +---+|xx|
+   |+-+             ......     |xxx|+--+
+   ||0|  ...        ......     +---++--+
+   ||0|  ... xx     ......     |xxx||xx|
+   |+-+             ......     +---+|xx|
+ P || 0 |    xx     /\  xxxx   +---+|xx|
+ W |+---+           \/ x|||| x |xxx|+--+
+ R || 0 |          Rst x|||| x +---+ +-+
+ | |+---+              x|||| x |xxx|x|x|
+ +->|PWR|              x|||| x +---+x|x|
+   |+---+     xxx      x|||| x |xxx|x+-+
+ +->|GND|+--+          x|||| x +---+   |
+ | |+---+|U | ++ +----+x|||| x+--+--+  |
+ G |O    |S | || | SD |x|||| x|xx|xx| O|
+ N +-----|B |-||-|Card|-||||--+--+--+--+
+ D       +--+ ++ +----+ ||||
+                        ||||
+            Host 5V ----+||+-< From Host TX
+     Host GND -----------++---> To Host RX
+
 EOF:
