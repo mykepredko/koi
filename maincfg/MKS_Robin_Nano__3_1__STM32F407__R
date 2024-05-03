@@ -160,8 +160,8 @@ SERIALCONNECTION:
  | |+---+|U | ++ +----+x|||| x+--+--+  |
  G |O    |S | || | SD |x|||| x|xx|xx| O|
  N +-----|B |-||-|Card|-||||--+--+--+--+
- D       +--+ ++ +----+ ||||
-                        ||||
+ D       +--+ ++ +----+ $em||||$reg
+                        $em||||$reg
             Host 5V ----+||+-< From Host TX
      Host GND -----------++---> To Host RX
 
