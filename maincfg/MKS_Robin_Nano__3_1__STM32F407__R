@@ -150,18 +150,18 @@ SERIALCONNECTION:
    ||0|  ...        ......     +---++--+
    ||0|  ... xx     ......     |xxx||xx|
    |+-+             ......     +---+|xx|
-$em P $re|| 0 |    xx     /\ $em xxxx$re   +---+|xx|
-$em W $re|+---+           \/ x$em||||$re x |xxx|+--+
-$em R $re|| 0 |          Rst x$em||||$re x +---+ +-+
-$em | $re|+---+              x$em||||$re x |xxx|x|x|
-$em +->|PWR$re|              x$em||||$re x +---+x|x|
-   |+---+     xxx      x$em||||$re x |xxx|x+-+
-$em +->|GND$re|+--+          x$em||||$re x +---+   |
-$em | $re|+---+|U | ++ +----+x$em||||$re x+--+--+  |
-$em G $re|O    |S | || | SD |x$em||||$re x|xx|xx| O|
-$em N $re+-----|B |-||-|Card|-$em||||$re--+--+--+--+
-$em D $re      +--+ ++ +----+ $em||||
-                        $em||||
-           $em Host 5V ----+||+-< From Host TX
-    $em Host GND -----------++---> To Host RX
+%y P %w|| 0 |    xx     /\ %y xxxx%w   +---+|xx|
+%y W %w|+---+           \/ x%y||||%w x |xxx|+--+
+%y R %w|| 0 |          Rst x%y||||%w x +---+ +-+
+%y | %w|+---+              x%y||||%w x |xxx|x|x|
+%y +->|PWR%w|              x%y||||%w x +---+x|x|
+   |+---+     xxx      x%y||||%w x |xxx|x+-+
+%y +->|GND%w|+--+          x%y||||%w x +---+   |
+%y | %w|+---+|U | ++ +----+x%y||||%w x+--+--+  |
+%y G %w|O    |S | || | SD |x%y||||%w x|xx|xx| O|
+%y N %w+-----|B |-||-|Card|-%y||||%w--+--+--+--+
+%y D %w      +--+ ++ +----+ %y||||
+                        %y||||
+           %y Host 5V ----+||+-< From Host TX
+    %y Host GND -----------++---> To Host RX
 EOF:
