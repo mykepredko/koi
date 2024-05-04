@@ -40,13 +40,13 @@ USBCONNECTION:
  USB to Main Controller <--+      |
            2A USB Power Supply <--+
 SERIALCONNECTION:
-   +-+--- 5V (2A)
-   | | +--- GND 
-   | | | +---> TX
-   | | | | +---< RX
-   | | | | |
-+--|-|-|-|-|--------------------------------+
-|O + + + + + x x x x x x x x x x x x x x x O|
+   %y+-+--- 5V (2A)
+   %y| | +--- GND 
+   %y| | | +---> TX
+   %y| | | | +---< RX
+   %y| | | | |
++--%y|-|-|-|-|%w--------------------------------+
+|O %y+ + + + +%w x x x x x x x x x x x x x x x O|
 |  x x x x x x x x x x x x x x x x x x x x  |
 |                                           |
 +-----+                                     |
