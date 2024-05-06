@@ -109,8 +109,8 @@ Raspberry Pi                Robin Nano
      |
 +%b GND%w|%b------------------------Host GND
      |
-+%g TX%w |%c------------------------Host TX
++%c TX%w |%c------------------------Host TX
      |
-+%c RX%w |%g------------------------Host RX
++%g RX%w |%g------------------------Host RX
      |
 EOF:
