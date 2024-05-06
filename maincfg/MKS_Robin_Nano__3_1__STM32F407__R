@@ -164,4 +164,19 @@ SERIALCONNECTION:
                         %r|%b|%g|%c|
            %r Host 5V ----+%b|%g|%c+-< Host TX
     %b Host GND -----------+%g+---> Host RX
+SERIALWIRING:
+Raspberry Pi                Robin Nano
+40 Pin                      Serial Pins
+-----+
++%r 5V%w |
+     |
++%r 5V%w |%r------------------------Host 5V
+     |
++%b GND%w|%b------------------------Host GND
+     |
++%g RX%w |%g---------------+  %c+-----Host TX
+     |               %g|  %c|
++%c TX%w |%c------------+  %g+--------Host RX
+     |            %g|     |
+     |            %g+-----+
 EOF:
