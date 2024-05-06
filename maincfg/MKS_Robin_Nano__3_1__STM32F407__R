@@ -150,20 +150,20 @@ SERIALCONNECTION:
    ||0|  ...        ......     +---++--+
    ||0|  ... xx     ......     |xxx||xx|
    |+-+             ......     +---+|xx|
-%r P %w|| 0 |    xx     /\  %rx%bx%cx%gx%w   +---+|xx|
-%r W %w|+---+           \/ x%r|%b|%c|%g|%w x |xxx|+--+
-%r R %w|| 0 |          Rst x%r|%b|%c|%g|%w x +---+ +-+
-%r | %w|+---+              x%r|%b|%c|%g|%w x |xxx|x|x|
-%r +->%w|PWR|              x%r|%b|%c|%g|%w x +---+x|x|
-   |+---+     xxx      x%r|%b|%c|%g|%w x |xxx|x+-+
-%b +->%w|GND|+--+          x%r|%b|%c|%g|%w x +---+   |
-%b | %w|+---+|U | ++ +----+x%r|%b|%c|%g|%w x+--+--+  |
-%b G %w|O    |S | || | SD |x%r|%b|%c|%g|%w x|xx|xx| O|
-%b N %w+-----|B |-||-|Card|-%r|%b|%c|%g|%w--+--+--+--+
-%b D %w      +--+ ++ +----+ %r|%b|%c|%g|
-                        %r|%b|%c|%g|
-           %r Host 5V ----+%b|%c|%g+-< Host RX
-    %b Host GND -----------+%c+---> Host TX
+%r P %w|| 0 |    xx     /\  %rx%bx%gx%cx%w   +---+|xx|
+%r W %w|+---+           \/ x%r|%b|%g|%c|%w x |xxx|+--+
+%r R %w|| 0 |          Rst x%r|%b|%g|%c|%w x +---+ +-+
+%r | %w|+---+              x%r|%b|%g|%c|%w x |xxx|x|x|
+%r +->%w|PWR|              x%r|%b|%g|%c|%w x +---+x|x|
+   |+---+     xxx      x%r|%b|%g|%c|%w x |xxx|x+-+
+%b +->%w|GND|+--+          x%r|%b|%g|%c|%w x +---+   |
+%b | %w|+---+|U | ++ +----+x%r|%b|%g|%c|%w x+--+--+  |
+%b G %w|O    |S | || | SD |x%r|%b|%g|%c|%w x|xx|xx| O|
+%b N %w+-----|B |-||-|Card|-%r|%b|%g|%c|%w--+--+--+--+
+%b D %w      +--+ ++ +----+ %r|%b|%g|%c|
+                        %r|%b|%g|%c|
+           %r Host 5V ----+%b|%g|%c+-< Host TX
+    %b Host GND -----------+%g+---> Host RX
 SERIALWIRING:
 Raspberry Pi                Robin Nano
 40 Pin                      Serial Pins
@@ -174,9 +174,9 @@ Raspberry Pi                Robin Nano
      |
 +%b GND%w|%b------------------------Host GND
      |
-+%g TX%w |%c---------------+  %g+-----Host RX
++%c TX%w |%c---------------+  %g+-----Host RX
      |               %c|  %g|
-+%c RX%w |%g------------+  %c+--------Host TX
++%g RX%w |%g------------+  %c+--------Host TX
      |            %g|     |
      |            %g+-----+
 EOF:
