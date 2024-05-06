@@ -112,6 +112,6 @@ Raspberry Pi                Robin Nano
 +%g RX%w |%g---------------+  %c+-----Host TX
      |               %g|  %c|
 +%c TX%w |%c------------+  %g+--------Host RX
-     |            %g|     |
-     |            %g+-----+
+     |            %c|     |
+     |            %c+-----+
 EOF:
