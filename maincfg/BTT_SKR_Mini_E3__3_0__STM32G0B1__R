@@ -100,7 +100,7 @@ SERIALCONNECTION:
 %b|       %c Host TX >------+%g |%b |%r +--> Host 5V
 %bGND          %g Host RX <---+ %b+--- Host GND
 SERIALWIRING:
-Raspberry Pi                Robin Nano
+Raspberry Pi                SKR Mini E3
 40 Pin                      Serial Pins
 -----+
 +%r 5V%w |
