@@ -87,16 +87,31 @@ SERIALCONNECTION:
    | |          /___________/_/RST xx USB|
    |  \________/      .....     /\ xx +--+
    | O  ..      xxxxx .....     \/ xx xx|
-%yP  |    ..      O  .. .....       xxx xx|
-%yW  |   xx          .. ..... GND  +-++--+|
-%yR  |   xx  ....       x %yx x x x%w  | ||  ||
-%y|  |+---+  .... ...     %y| | | |%w  | ||  ||
-%y+->%w||PWR|  .... ... +-++%y|%w+%y|%w-%y|+%y|-+| ||  ||
-   |+---+  +---+---++-++|+%y|%w-%y|%w+%y|%w-%y|%w+-++--+|
-%y+->%w||GND|  |O O|O O|  +-%y|%w-%y|%w-%y|%w-%y|%w-+-+-+   |
-%y|%w  |+---+  +---+---+  +-%y|%w-%y|%w-%y|%w-%y|%w-+-+-+  O|
-%y|%w  +--------------------%y|%w-%y|%w-%y|%w-%y|%w---------+
-%y|                       | | | |
-%y|   From Host TX >------+ | | +--> Host 5V
-%yGND        To Host RX <---+ +--- Host GND
+%rP%w  |    ..      O  .. .....       xxx xx|
+%rW%w  |   xx          .. ..... GND  +-++--+|
+%rR%w  |   xx  ....       x %cx%g x%b %rx x%w  | ||  ||
+%r|%w  |+---+  .... ...     %c|%g |%b |%r |%w  | ||  ||
+%r+->%w||PWR|  .... ... +-++%c|%w+%g|%w-%b|+%r|-+| ||  ||
+   |+---+  +---+---++-++|+%c|%w-%g|%w+%b|%w-%r|%w+-++--+|
+%b+->%w||GND|  |O O|O O|  +-%c|%w-%g|%w-%b|%w-%r|%w-+-+-+   |
+%b|%w  |+---+  +---+---+  +-%c|%w-%g|%w-%b|%w-%r|%w-+-+-+  O|
+%b|%w  +--------------------%c|%w-%g|%w-%b|%w-%r|%w---------+
+%b|                       %c|%g |%b |%r |
+%b|       %c Host TX >------+%g |%b |%r +--> Host 5V
+%bGND          %g Host RX <---+ %b+--- Host GND
+SERIALWIRING:
+Raspberry Pi                Robin Nano
+40 Pin                      Serial Pins
+-----+
++%r 5V%w |
+     |
++%r 5V%w |%r------------------------Host 5V
+     |
++%b GND%w|%b------------------------Host GND
+     |
++%g RX%w |%g---------------+  %c+-----Host TX
+     |               %g|  %c|
++%c TX%w |%c------------+  %g+--------Host RX
+     |            %g|     |
+     |            %g+-----+
 EOF:
