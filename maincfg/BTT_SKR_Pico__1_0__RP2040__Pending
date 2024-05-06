@@ -100,7 +100,7 @@ SERIALCONNECTION:
           +--++--++---++---++---+       %r  |
                                       %rPWR IN
 SERIALWIRING:
-Raspberry Pi                Robin Nano
+Raspberry Pi                SKR Pico
 40 Pin                      Serial Pins
 -----+
 +%r 5V%w |%r------------------------Host 5V
