@@ -74,11 +74,11 @@ USBCONNECTION:
 SERIALCONNECTION:
 +-----------+-----+-----------+
 |O          |     |          O|
-+---+       |     |        x %y+--- 5V (2A)
-|   |USBC   |     |        x %y+--- 5V (2A)
-|   |Power  +-----+        x %y+--- GND
-+---+       SD Card        x %y+---> TX
-|            Slot          x %y+---< RX
++---+       |     |        x %r+--- 5V (2A)
+|   |USBC   |     |        x %r+--- 5V (2A)
+|   |Power  +-----+        x %b+--- GND
++---+       SD Card        x %c+---> TX
+|            Slot          x %g+---< RX
 |                          x x|
 +---+                      x x|
 |   |HDMI0                 x x|
