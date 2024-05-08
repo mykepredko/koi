@@ -1,0 +1,113 @@
+#  BigTreeTech Manta M5P V1 Main Controller Configuration File
+#  (C) Copyright for File Contents and Format
+#  2024 Myke Predko
+FULLNAME: Manta M5P V1
+MAINNAME: Manta M5P V1
+STATUS: Released
+PROCESSOR: STM32G0B1
+VERSION: 1.0
+FIRMWARELOAD: Embedded DFU
+SD Card
+FIRMWARENAME: firmware.bin
+CONNECTIONS: Embedded USB
+KLIPPERPRINTERCFG: generic-mks-robin-nano-v3
+BUILTINCAN: PD0/PD1
+KLIPPERSERIALCONFIGURATION:
+KLIPPERUSBCONFIGURATION:
+[*] Enable extra low-level configuration options
+Micro-controller Architecture (STMicroelectronics STM32) --->
+Processor model (STM32G0B1) --->
+Bootloader offset (8KiB bootloader)  --->
+Clock Reference (8 MHz crystal) --->
+Communication interface (USB (on PA11/PA12)
+BLOCKDIAGRAM:
+++----++---|-+---+--+--+--+--+--------+
+||    ||   | |   |  |  |++|  |+----+ O|
+||    ||   | +---+  +--++++--+xxx  |++|
+|+----++---+   +----++----+ ++xxx  ||||
+|O             |xxxx||xxxx| +++----+++|
+|++ %b+---------+%w+----++----+ +++----+++|
+|++ %b|O       O|%w+--++-++-+   ||xxx  ||||
+|++ %b|         |%w|xx|+-++-+   ||xxx  ||||
+|++ %b|         |%w+--+    .... +++----+++|
+|++ %b|         |%w++      .... +++----+++|
+|++ %b|         |%w|| xxx  .... ||xxx  ||||
+|++ %b|%w CM4/CB1%b |%w++ xxx  .... ||xxx  ||||
+|++ %b|%w Socket %b |%w++ xxx  BOOT0+++----+++|
+|++ %b|         |%w||    /\/\   +++----+++|
+|++ %b|         |%w++    \/\/   ||xxx  ||||
+|++ %b|         |%w++ RESET     ||xxx  ||||
+|++ %b|         |%w||           +++----+++|
+|++ %b|         |%w++         xxxx+----+++|
+|++ %b|O       O|%w+-+            xxx  ||||
+|++ %b+---------+%w+-+       ++++ xxx  ||||
+|++    +-+               ++++ +----+++|
+|      | |      +-+-+-+-+     +-+-+   |
+|O++++ | | +-+  |O|O|O|0| ++++|O|O|  O|
++-++++-+-+-+-+--+-+-+-+-+-+++++-+-+---+
+SDCARDFIRMARELOAD:
+                 %ySD Card (Underside of PCB)
+                 %yV  V  V
+
+++----++---|-+---+--+--+--+--+--------+
+||    ||   | |   |  |  |++|  |+----+ O|
+||    ||   | +---+  +--++++--+xxx  |++|
+|+----++---+   +----++----+ ++xxx  ||||
+|O             |xxxx||xxxx| +++----+++|
+|++ %b+---------+%w+----++----+ +++----+++|
+|++ %b|O       O|%w+--++-++-+   ||xxx  ||||
+|++ %b|         |%w|xx|+-++-+   ||xxx  ||||
+|++ %b|         |%w+--+    .... +++----+++|
+|++ %b|         |%w++      .... +++----+++|
+|++ %b|         |%w|| xxx  .... ||xxx  ||||
+|++ %b|%w CM4/CB1%b |%w++ xxx  .... ||xxx  ||||
+|++ %b|%w Socket %b |%w++ xxx  BOOT0+++----+++|
+|++ %b|         |%w||    /\/\   +++----+++|
+|++ %b|         |%w++    \/\/   ||xxx  ||||
+|++ %b|         |%w++ RESET     ||xxx  ||||
+|++ %b|         |%w||           +++----+++|
+|++ %b|         |%w++         xxxx+----+++|
+|++ %b|O       O|%w+-+            xxx  ||||
+|++ %b+---------+%w+-+       ++++ xxx  ||||
+|++    +-+               ++++ +----+++|
+|      | |      +-+-+-+-+     +-+-+   |
+|O++++ | | +-+  |O|O|O|0| ++++|O|O|  O|
++-++++-+-+-+-+--+-+-+-+-+-+++++-+-+---+
+                  
+1. Turn off Power to Main Controller
+2. Insert SD Card (Underside of PCB)
+3. Turn on Power to Main Controller
+4. Wait 1 Minute
+5. Turn off Power to Main Controller
+6. Remove SD Card
+DFUFIRMARELOAD:
+MSSFIRMWARELOAD:
+THUMBFIRMWARELOAD:
+USBEMBEDDEDCONNECTION:
+++----++---|-+---+--+--+--+--+--------+
+||    ||   | |   |  |  |++|  |+----+ O|
+||    ||   | +---+  +--++++--+xxx  |++|
+|+----++---+   +----++----+ ++xxx  ||||
+|O             |xxxx||xxxx| +++----+++|
+|++ %y+---------+%w+----++----+ +++----+++|
+|++ %y|O       O|%w+--++-++-+   ||xxx  ||||
+|++ %y|         |%w|xx|+-++-+   ||xxx  ||||
+|++ %y|         |%w+--+    .... +++----+++|
+|++ %y|         |%w++      .... +++----+++|
+|++ %y|         |%w|| xxx  .... ||xxx  ||||
+|++ %y|%w CM4/CB1%y |%w++ xxx  .... ||xxx  ||||
+|++ %y|         |%w++ xxx  BOOT0+++----+++|
+|++ %y|         |%w||    /\/\   +++----+++|
+|++ %y|         |%w++    \/\/   ||xxx  ||||
+|++ %y|         |%w++ RESET     ||xxx  ||||
+|++ %y|         |%w||           +++----+++|
+|++ %y|         |%w++         xxxx+----+++|
+|++ %y|O       O|%w+-+            xxx  ||||
+|++ %y+---------+%w+-+       ++++ xxx  ||||
+|++    +-+               ++++ +----+++|
+|      | |      +-+-+-+-+     +-+-+   |
+|O++++ | | +-+  |O|O|O|0| ++++|O|O|  O|
++-++++-+-+-+-+--+-+-+-+-+-+++++-+-+---+
+USBCONNECTION:
+SERIALCONNECTION:
+EOF:
