@@ -39,7 +39,7 @@ BLOCKDIAGRAM:
 |++ %b+---------+%w+-+       ++++ xxx  ||||
 |++    +-+               ++++ +----+++|
 |      | |      +-+-+-+-+     +-+-+   |
-|O++++ | | +-+  |O|O|O|0| ++++|O|O|  O|
+|O++++ | | +-+  |O|O|O|O| ++++|O|O|  O|
 +-++++-+-+-+-+--+-+-+-+-+-+++++-+-+---+
 SDCARDFIRMARELOAD:
                  %ySD Card (Underside of PCB)
@@ -67,9 +67,11 @@ SDCARDFIRMARELOAD:
 |++ %b+---------+%w+-+       ++++ xxx  ||||
 |++    +-+               ++++ +----+++|
 |      | |      +-+-+-+-+     +-+-+   |
-|O++++ | | +-+  |O|O|O|0| ++++|O|O|  O|
-+-++++-+-+-+-+--+-+-+-+-+-+++++-+-+---+
-                  
+|O++++ | | +-+  |O|O|O|O| ++++|O|O|  O|
++-++++-+-+-+-+--+-+-+%r^%w+%b^%w+-+++++-+-+---+
+                     %r^%b ^
+                     %r|%b |
+              %rPWR ---+%b +--- GND
 1. Turn off Power to Main Controller
 2. Insert SD Card (Underside of PCB)
 3. Turn on Power to Main Controller
@@ -102,8 +104,11 @@ USBEMBEDDEDCONNECTION:
 |++ %y+---------+%w+-+       ++++ xxx  ||||
 |++    +-+               ++++ +----+++|
 |      | |      +-+-+-+-+     +-+-+   |
-|O++++ | | +-+  |O|O|O|0| ++++|O|O|  O|
-+-++++-+-+-+-+--+-+-+-+-+-+++++-+-+---+
+|O++++ | | +-+  |O|O|O|O| ++++|O|O|  O|
++-++++-+-+-+-+--+-+-+%r^%w+%b^%w+-+++++-+-+---+
+                     %r^%b ^
+                     %r|%b |
+              %rPWR ---+%b +--- GND
 USBCONNECTION:
 SERIALCONNECTION:
 EOF:
