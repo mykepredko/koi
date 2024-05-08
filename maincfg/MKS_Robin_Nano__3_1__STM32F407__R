@@ -8,7 +8,7 @@ FIRMWARENAME:Robin_nano35.bin
 CONNECTIONS:USB
 Serial
 KLIPPERPRINTERCFG:generic-mks-robin-nano-v3
-BUILTINCAN:NONE
+BUILTINCAN:
 KLIPPERSERIALCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
