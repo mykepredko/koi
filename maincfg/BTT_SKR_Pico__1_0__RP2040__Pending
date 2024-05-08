@@ -7,7 +7,7 @@ FIRMWARENAME:firmware.bin
 CONNECTIONS:USB
 Serial
 KLIPPERPRINTERCFG:generic-bigtreetech-skr-pico-v1.0
-BUILTINCAN:NONE
+BUILTINCAN:
 KLIPPERSERIALCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (Raspberry Pi RP2040) --->
