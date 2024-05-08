@@ -1,16 +1,12 @@
 #  BigTreeTech Manta M5P V1 Main Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
-FULLNAME: Manta M5P V1
-MAINNAME: Manta M5P V1
-STATUS: Released
-PROCESSOR: STM32G0B1
-VERSION: 1.0
+DISPLAYNAME: Manta M5P V1
 FIRMWARELOAD: Embedded DFU
 SD Card
 FIRMWARENAME: firmware.bin
 CONNECTIONS: Embedded USB
-KLIPPERPRINTERCFG: generic-mks-robin-nano-v3
+KLIPPERPRINTERCFG: generic-bigtreetech-manta-m5p
 BUILTINCAN: PD0/PD1
 KLIPPERSERIALCONFIGURATION:
 KLIPPERUSBCONFIGURATION:
