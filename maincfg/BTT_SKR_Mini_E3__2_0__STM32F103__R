@@ -1,0 +1,130 @@
+#  BigTreeTech SKR Mini E3 V3 Main Controller Configuration File
+#  (C) Copyright for File Contents and Format
+#  2024 Myke Predko
+FULLNAME: BTT SKR Mini E3 V2
+MAINNAME: SKR Mini E3
+STATUS: Released
+PROCESSOR: STM32F103
+VERSION: 2.0
+FIRMWARELOAD: SD Card
+FIRMWARENAME: firmware.bin
+CONNECTIONS: USB
+Serial
+KLIPPERPRINTERCFG: generic-bigtreetech-skr-mini-e3-v2.0
+BUILTINCAN: NONE
+KLIPPERSERIALCONFIGURATION:
+[*] Enable extra low-level configuration options
+Micro-controller Architecture (STMicroelectronics STM32) --->
+Processor model (STM32F103) --->
+[ ] Only 10KiB of RAM (for rare stm32f103x6 variant)
+[ ] Disable SWD at startup (for GigaDevice stm32f103 clones)
+Bootloader offset (28KiB bootloader)  --->
+Clock Reference (8 MHz crystal)  --->
+Communication interface (Serial (on USART2 PA3/PA2))  --->
+(250000) Baud rate for serial port
+(!PA14) GPIO pins to set at micro-controller startup
+KLIPPERUSBCONFIGURATION:
+[*] Enable extra low-level configuration options
+Micro-controller Architecture (STMicroelectronics STM32) --->
+Processor model (STM32F103) --->
+[ ] Only 10KiB of RAM (for rare stm32f103x6 variant)
+[ ] Disable SWD at startup (for GigaDevice stm32f103 clones)
+Bootloader offset (28KiB bootloader)  --->
+Clock Reference (8 MHz crystal)  --->
+Communication interface (USB (on PA11/PA12))  --->
+USB ids  --->
+(!PA14) GPIO pins to set at micro-controller startup
+BLOCKDIAGRAM:
++------------------------------------+
+|  +---+ O+---++---++---++---+ 0+----+
+|  +---+  +---++---++---++---+  |SD  |
+|   ...    ...     ...   ...    |CARD|
+|   ...    ...     ...   ...    +----+
+|   ...    ...     ...   ...         |
+|              x                 +---+
+|              x   .....     RST |USB|
+|              x   .....     /\  +---+
+| O            x   .....     \/ xx xx|
+|            O                 xxx xx|
+|   xx          .. ..... GND  +-++--+|
+|   xx  ....       x x x x x  | ||  ||
+|+---+  .... ...    Rx Tx  PWR| ||  ||
+||PWR|  .... ... +-++-++--+--+| ||  ||
+|+---+ +---+---+ +-++-++--+--++-++--+|
+||GND| |O O|O O|++++ +-+-+-+-+-+-+   |
+|+---+ +---+---+++++ +-+-+-+-+-+-+  O|
++------------------------------------+
+SDCARDFIRMARELOAD:
++------------------------------------+
+|  +---+ O+---++---++---++---+ 0+----+
+|  +---+  +---++---++---++---+  |SD  |%y<SD
+|   ...    ...     ...   ...    |CARD|%y<Card
+|   ...    ...     ...   ...    +----+
+|   ...    ...     ...   ...         |
+|              x                 +---+
+|              x   .....     RST |USB|
+|              x   .....     /\  +---+
+| O            x   .....     \/ xx xx|
+|            O                 xxx xx|
+|   xx          .. ..... GND  +-++--+|
+|   xx  ....       x x x x x  | ||  ||
+|+---+  .... ...    Rx Tx  PWR| ||  ||
+||PWR|  .... ... +-++-++--+--+| ||  ||
+|+---+ +---+---+ +-++-++--+--++-++--+|
+||GND| |O|O|O|O|++++ +-+-+-+-+-+-+   |
+|+---+ +---+---+++++ +-+-+-+-+-+-+  O|
++-------%r^%w-%b^%w--------------------------+
+        %r| %b|
+ %rPWR ---+ %b|
+  %bGND ----+
+
+1. Turn off Power to Main Controller
+2. Insert SD Card
+3. Turn on Power to Main Controller
+4. Wait 1 Minute
+5. Turn off Power to Main Controller
+6. Remove SD Card
+DFUFIRMARELOAD:
+MSSFIRMWARELOAD:
+THUMBFIRMWARELOAD:
+USBEMBEDDEDCONNECTION:
+USBCONNECTION:
+SERIALCONNECTION:
++------------------------------------+
+|  +---+ O+---++---++---++---+ 0+----+
+|  +---+  +---++---++---++---+  |SD  |
+|   ...    ...     ...   ...    |CARD|
+|   ...    ...     ...   ...    +----+
+|   ...    ...     ...   ...         |
+|              x                 +---+
+|              x   .....     RST |USB|
+|              x   .....     /\  +---+
+| O            x   .....     \/ xx xx|
+|            O                 xxx xx|
+|   xx          .. .....      +-++--+|
+|   xx  ....       x %cx %gx %bx %rx  | ||  ||
+|+---+  .... ...     %c| %g| %b| %r|  | ||  ||
+||PWR|  .... ... +-++%c|+%g|-%b|+%r|-+| ||  ||
+|+---+ +---+---+ +-++%c|+%g|-%b|+%r|-++-++--+|
+||GND| |O|O|O|O|++++ %c|-%g}-%b|-%r|-+-+-+   |
+|+---+ +---+---+++++ %c|-%g|-%b|-%r|-+-+-+  O|
++-------%r^%w-%b^%w----------%c|-%g|-%b|-%r|---------+
+        %r| %b|          %c| %g| %b| %r|
+ %rPWR ---+ %b| %cHost TX >+ %g| %b| %r+-- Host 5V
+  %bGND ----+  %gHost RX >-+ %b+-- Host GND
+SERIALWIRING:
+Raspberry Pi                SKR Mini E3
+40 Pin                      Serial Pins
+-----+
++%r 5V%w |
+     |
++%r 5V%w |%r------------------------Host 5V
+     |
++%b GND%w|%b------------------------Host GND
+     |
++%c TX%w |%c---------------+  %g+-----Host RX
+     |               %c|  %g|
++%g RX%w |%g------------+  %c+--------Host TX
+     |            %g|     |
+     |            %g+-----+
+EOF:
