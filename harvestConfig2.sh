@@ -11,7 +11,7 @@
 # - Stores the two variables into the destination filename
 
 # To execute the script from Github, use the Linux command line statement:
-#  bash <(curl -s https://raw.githubusercontent.com/mykepredko/koi/main/harvestConfig2.sh)
+#  bash <(curl -s https://raw.githubusercontent.com/mykepredko/koi/main/harvestConfig2.sh) configFileName
 
 
 # Written by: myke predko
