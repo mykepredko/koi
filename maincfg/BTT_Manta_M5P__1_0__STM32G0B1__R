@@ -110,6 +110,7 @@ USBEMBEDDEDCONNECTION:
                      %r|%b |
               %rPWR ---+%b +--- GND
 USBCONNECTION:
+USBWIRING:
 SERIALCONNECTION:
 SERIALWIRING:
 EOF:
