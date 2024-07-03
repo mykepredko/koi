@@ -1,9 +1,9 @@
 #  Orange Pi Zero 2W Host Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
-HOSTNAME:rPi Zero 2W
+HOSTNAME:OrangePi02W
 STATUS:Released
-MATCHNAME:Raspberry Pi Zero 2 W
+MATCHNAME:Orange Pi Zero 2 W
 CONNECTIONS:USB
 Serial
 USBSOCKET:C
