@@ -6,7 +6,7 @@ STATUS:Released
 MATCHNAME:Raspberry Pi 5 Model B
 CONNECTIONS:USB
 Serial
-USBSOCKET:A
+USBSOCKET:2A
 BLOCKDIAGRAM:
 +-----------+-----+-----------+
 |O          |     |          O|
