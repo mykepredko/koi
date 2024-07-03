@@ -6,7 +6,7 @@ STATUS:Released
 MATCHNAME:BTT Pi
 CONNECTIONS:USB
 Serial
-USBSOCKET:A
+USBSOCKET:2A
 BLOCKDIAGRAM:
 +-----------+-----+-----------+
 |O          |     |          O|
