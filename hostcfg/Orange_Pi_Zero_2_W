@@ -1,0 +1,62 @@
+#  Orange Pi Zero 2W Host Controller Configuration File
+#  (C) Copyright for File Contents and Format
+#  2024 Myke Predko
+HOSTNAME:rPi Zero 2W
+STATUS:Released
+MATCHNAME:Raspberry Pi Zero 2 W
+CONNECTIONS:USB
+Serial
+USBSOCKET:OTG
+BLOCKDIAGRAM:
++-------------------------------------------+
+|O x x x x x x x x x x x x x x x x x x x x O|
+|  x x x x x x x x x x x x x x x x x x x x  |
+|       40 Pin Raspberry Pi Connector       |
++-----+                                     |
+|     | Micro                               |
+|     | SD Card                             |
+|     | Slot                                |
++-----+                                     |
+|    Mini HDMI           USBC   USBC        |
+|    +-------+           +---+  +---+       |
+|O   |       |           |COM|  |PWR|      O|
++----+-------+-----------+---+--+---+-------+
+ "USB - Pwr" does NOT provide Communications
+USBEMBEDDEDCONNECTION:
+USBCONNECTION:
++-------------------------------------------+
+|O x x x x x x x x x x x x x x x x x x x x O|
+|  x x x x x x x x x x x x x x x x x x x x  |
+|                                           |
++-----+                                     |
+|     |                                     |
+|     |                                     |
+|     |                                     |
++-----+                                     |
+|    Mini HDMI           USBC   USBC        |
+|    +-------+           +---+  +---+       |
+|O   |       |           |COM|  |PWR|      O|
++----+-------+-----------+---+--+---+-------+
+                           |      |
+ USB to Main Controller <--+      |
+           2A USB Power Supply <--+
+SERIALCONNECTION:
+   %r+-+--- 5V (2A)
+   %r| | %b+--- GND 
+   %r| | %b|%c +---> TX
+   %r| | %b|%c | %g+---< RX
+   %r| | %b|%c | %g|
++--%r|%w-%r|%w-%b|%w-%c|%w-%g|%w--------------------------------+
+|O %r+ + %b+ %c+ %g+%w x x x x x x x x x x x x x x x O|
+|  x x x x x x x x x x x x x x x x x x x x  |
+|                                           |
++-----+                                     |
+|     |                                     |
+|     |                                     |
+|     |                                     |
++-----+                                     |
+|    Mini HDMI           USBC   USBC        |
+|    +-------+           +---+  +---+       |
+|O   |       |           |COM|  |PWR|      O|
++----+-------+-----------+---+--+---+-------+
+EOF:
