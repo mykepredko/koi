@@ -7,7 +7,7 @@ MATCHNAME:Raspberry Pi Compute Module 4 Rev 1.1
 CONNECTIONS:Embedded USB
 USB
 Serial
-USBSOCKET:A
+USBSOCKET:2A
 BLOCKDIAGRAM:
 +-----------------------------+
 |O                           O|
