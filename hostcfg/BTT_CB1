@@ -7,7 +7,7 @@ MATCHNAME:BTT CB1
 CONNECTIONS:Embedded USB
 USB
 Serial
-USBSOCKET:A
+USBSOCKET:2A
 BLOCKDIAGRAM:
 +-----------------------------+
 |O                           O|
