@@ -6,6 +6,7 @@ STATUS:Released
 MATCHNAME:Raspberry Pi Zero 2 W
 CONNECTIONS:USB
 Serial
+USBSOCKET:OTG
 BLOCKDIAGRAM:
 +-------------------------------------------+
 |O x x x x x x x x x x x x x x x x x x x x O|
