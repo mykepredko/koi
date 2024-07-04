@@ -1,8 +1,12 @@
 #  BigTreeTech Manta M5P V1 Main Controller Configuration File
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
+#  NOTES:
+#  1.  Have to try to Connect Via USB Cables to an rPi
+#  2.  Have to try and do a firmware burn using an SD Card
+#      - If it can't be done then ONLY Embedded USB Connection & DFU Firmware Load
 DISPLAYNAME:Manta M5P
-FIRMWARELOAD:Embedded DFU
+FIRMWARELOAD:DFU
 SD Card
 FIRMWARENAME:firmware.bin
 CONNECTIONS:Embedded USB
