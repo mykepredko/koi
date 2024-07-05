@@ -4,10 +4,7 @@
 HOSTNAME:BTT CB1
 STATUS:Released
 MATCHNAME:BTT CB1
-CONNECTIONS:Embedded USB
-USB
-Serial
-USBSOCKET:2A
+HOSTTYPE:CM4
 BLOCKDIAGRAM:
 +-----------------------------+
 |O                           O|
