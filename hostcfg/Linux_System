@@ -4,8 +4,7 @@
 HOSTNAME:Linux PC/Laptop
 STATUS:Released
 MATCHNAME:Linux System
-CONNECTIONS:USB
-USBSOCKET:2A
+HOSTTYPE:LINUX
 BLOCKDIAGRAM:
                    +------------------+
                   /                  /
