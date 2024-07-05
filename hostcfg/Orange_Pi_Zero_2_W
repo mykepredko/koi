@@ -4,9 +4,7 @@
 HOSTNAME:OrangePi 0 2W
 STATUS:Released
 MATCHNAME:Orange Pi Zero 2 W
-CONNECTIONS:USB
-Serial
-USBSOCKET:C
+HOSTTYPE:ZEROC
 BLOCKDIAGRAM:
 +-------------------------------------------+
 |O x x x x x x x x x x x x x x x x x x x x O|
