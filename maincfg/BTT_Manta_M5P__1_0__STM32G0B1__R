@@ -9,7 +9,7 @@ USBPORT:PA11/PA12
 USBTYPE:
 BUILTINSERIAL:
 BUILTINCAN:PD0/PD1
-FIRMWARELOAD:DFU
+FIRMWAREFLASH:DFU
 FIRMWARENAME:
 PRINTERCFG:generic-bigtreetech-manta-m5p
 KLIPPERSERIALCONFIGURATION:
@@ -46,42 +46,6 @@ BLOCKDIAGRAM:
 |O++++ | | +-+  |O|O|O|O| ++++|O|O|  O|
 +-++++-+-+-+-+--+-+-+-+-+-+++++-+-+---+
 SDCARDFIRMARELOAD:
-                 %ySD Card (Underside of PCB)
-                 %yV  V  V
-
-++----++---+-+---+--+--+--+--+--------+
-||    ||   | |   |  |  |++|  |+----+ O|
-||    ||   | +---+  +--++++--+xxx  |++|
-|+----++---+   +----++----+ ++xxx  ||||
-|O             |xxxx||xxxx| +++----+++|
-|++ %b+---------+%w+----++----+ +++----+++|
-|++ %b|O       O|%w+--++-++-+   ||xxx  ||||
-|++ %b|         |%w|xx|+-++-+   ||xxx  ||||
-|++ %b|         |%w+--+    .... +++----+++|
-|++ %b|         |%w++      .... +++----+++|
-|++ %b|         |%w|| xxx  .... ||xxx  ||||
-|++ %b|%w CM4/CB1%b |%w++ xxx  .... ||xxx  ||||
-|++ %b|%w Socket %b |%w++ xxx  BOOT0+++----+++|
-|++ %b|         |%w||    /\/\   +++----+++|
-|++ %b|         |%w++    \/\/   ||xxx  ||||
-|++ %b|         |%w++ RESET     ||xxx  ||||
-|++ %b|         |%w||           +++----+++|
-|++ %b|         |%w++         xxxx+----+++|
-|++ %b|O       O|%w+-+            xxx  ||||
-|++ %b+---------+%w+-+       ++++ xxx  ||||
-|++    +-+               ++++ +----+++|
-|      | |      +-+-+-+-+     +-+-+   |
-|O++++ | | +-+  |O|O|O|O| ++++|O|O|  O|
-+-++++-+-+-+-+--+-+-+%r^%w+%b^%w+-+++++-+-+---+
-                     %r^%b ^
-                     %r|%b |
-              %rPWR ---+%b +--- GND
-1. Turn off Power to Main Controller
-2. Insert SD Card (Underside of PCB)
-3. Turn on Power to Main Controller
-4. Wait 1 Minute
-5. Turn off Power to Main Controller
-6. Remove SD Card
 DFUFIRMARELOAD:
 MSSFIRMWARELOAD:
 THUMBFIRMWARELOAD:
