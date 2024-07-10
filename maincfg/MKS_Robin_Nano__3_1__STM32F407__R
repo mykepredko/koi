@@ -88,43 +88,6 @@ SDCARDFIRMARELOAD:
 DFUFIRMARELOAD:
 MSSFIRMWARELOAD:
 THUMBFIRMWARELOAD:
-  +-----------------------------------+
-  |O xx xx +--++--++--++--++--++--+  O|
-  |        +--++--++--++--++--++--+   |
-  |+-----++-----++-----++-----++-----+|
-  ||     ||     ||     ||     ||     ||
-  ||     ||     ||     ||     ||     ||
-  |+-----++-----++-----++-----++-----+|
-  |x x xxxxxx xxxx xxxx xxxxx +---++--+
-  |x x                  xxxxx |xxx||xx|
-  |+-+                        +---+|xx|
-  ||0|  ...               xxx |xxx||xx|
-  ||0|  ... xx            xxx +---+|xx|
-  |+-+             ......     |xxx|+--+
-  ||0|  ...        ......     +---++--+
-  ||0|  ... xx     ......     |xxx||xx|
-  |+-+             ......     +---+|xx|
-  |+---+                      |xxx||xx|
-%rP %w|| 0 |    xx     /\  xxxx   +---+|xx|
-%rW %w|+---+           \/ x     x |xxx|+--+
-%rR %w|| 0 |          Rst x     x +---+ +-+
-%r| %w|+---+              x     x |xxx|x|x|
-%r+->%w|PWR|              x     x +---+x|x|
-  |+---+     xxx      x     x |xxx|x+-+
-%b+->%w|GND|+--+          x     x +---+   |
-%b| %w|+---+|U | ++ +----+x     x+--+--+  |
-%bG %w|O    |S | || | SD |x     x|xx|xx| O|
-%bN %w+-----|B |-||-|Card|-------+--+--+--+
-%bD %w      +--+ ++ +----+
-              %y^
-              %y+- USB Thumb Drive
-               
-1. Turn off Power to Main Controller
-2. Insert USB Thumb Drive
-3. Turn on Power to Main Controller
-4. Wait 1 Minute
-5. Turn off Power to Main Controller
-6. Remove USB Thumb Drive
 USBEMBEDDEDCONNECTION:
 USBCONNECTION:
   +-----------------------------------+
