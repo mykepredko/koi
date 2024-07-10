@@ -11,13 +11,6 @@ FIRMWARELOAD:SD Card
 FIRMWARENAME:Robin_nano35.bin
 PRINTERCFG:generic-mks-robin-nano-v3
 KLIPPERSERIALCONFIGURATION:
-[*] Enable extra low-level configuration options
-Micro-controller Architecture (STMicroelectronics STM32) --->
-Processor model (STM32F407) --->
-Bootloader offset (48KiB bootloader (MKS Robin Nano V3))  --->
-Clock Reference (8 MHz crystal) --->
-Communication interface (Serial (on USART3 PB11/PB10)
-(250000) Baud rate for serial port
 KLIPPERUSBCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
