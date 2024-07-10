@@ -2,18 +2,15 @@
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
 #  NOTES:
-#  1.  Have to try to Connect Via USB Cables to an rPi
-#  2.  Have to try and do a firmware burn using an SD Card
-#      - If it can't be done then ONLY Embedded USB Connection & DFU Firmware Load
+#  1. This board ONLY works with a CM4 Type Host is plugged in
 DISPLAYNAME:Manta M5P
-FIRMWARELOAD:DFU
-SD Card
-FIRMWARENAME:firmware.bin
 HOSTSOCKET:CM4
 USBPORT:PA11/PA12
 USBTYPE:
 BUILTINSERIAL:
 BUILTINCAN:PD0/PD1
+FIRMWARELOAD:DFU
+FIRMWARENAME:firmware.bin
 KLIPPERPRINTERCFG:generic-bigtreetech-manta-m5p
 KLIPPERSERIALCONFIGURATION:
 KLIPPERUSBCONFIGURATION:
