@@ -2,12 +2,14 @@
 #  (C) Copyright for File Contents and Format
 #  2024 Myke Predko
 DISPLAYNAME:SKR Mini E3
+HOSTSOCKET:
+USBPORT:PA11/PA12
+USBTYPE:Micro
+BUILTINSERIAL:
+BUILTINCAN:
 FIRMWARELOAD:SD Card
 FIRMWARENAME:firmware.bin
-CONNECTIONS:USB
-Serial
-KLIPPERPRINTERCFG:generic-bigtreetech-skr-mini-e3-v3.0
-BUILTINCAN:
+PRINTERCFG:generic-bigtreetech-skr-mini-e3-v3.0
 KLIPPERSERIALCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
@@ -118,41 +120,5 @@ USBWIRING:
  +------+
   USB "A"
 SERIALCONNECTION:
-     +----------------------------------+
-    / +---+ O+---++---++---++---+ 0 +----+
-   /  +---+  +---++---++---++---+   |SD  |
-   |     +------------------------+ |CARD|
-   |    /________________________/  +----+
-   |   /          /  /  /  /  / / xxxxx |
-   |  /          /__/__/__/__/_/      +--+
-   | |          /___________/_/RST xx USB|
-   |  \________/      .....     /\ xx +--+
-   | O  ..      xxxxx .....     \/ xx xx|
-%rP%w  |    ..      O  .. .....       xxx xx|
-%rW%w  |   xx          .. ..... GND  +-++--+|
-%rR%w  |   xx  ....       x %cx%g x%b %rx x%w  | ||  ||
-%r|%w  |+---+  .... ...     %c|%g |%b |%r |%w  | ||  ||
-%r+->%w||PWR|  .... ... +-++%c|%w+%g|%w-%b|%w+%r|%w-+| ||  ||
-   |+---+  +---+---++-++%x|%w+%g|%w-%b|%w+%r|%w-|+-++--+|
-%b+->%w||GND|  |O O|O O|  +-%c|%w-%g|%w-%b|%w-%r|%w-+-+-+   |
-%b|%w  |+---+  +---+---+  +-%c|%w-%g|%w-%b|%w-%r|%w-+-+-+  O|
-%b|%w  +--------------------%c|%w-%g|%w-%b|%w-%r|%w---------+
-%b|                       %c|%g |%b |%r |
-%b|       %c Host TX >------+%g |%b |%r +--> Host 5V
-%bGND          %g Host RX <---+ %b+--- Host GND
 SERIALWIRING:
-Raspberry Pi                SKR Mini E3
-40 Pin                      Serial Pins
------+
-+%r 5V%w |
-     |
-+%r 5V%w |%r------------------------Host 5V
-     |
-+%b GND%w|%b------------------------Host GND
-     |
-+%c TX%w |%c---------------+  %g+-----Host RX
-     |               %c|  %g|
-+%g RX%w |%g------------+  %c+--------Host TX
-     |            %g|     |
-     |            %g+-----+
 EOF:
