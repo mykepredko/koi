@@ -20,7 +20,7 @@ BLOCKDIAGRAM:
 |                          x x|
 |                          x x|
 +---+                      x x|
-|   |HDKI1                 x x|
+|   |HDMI1                 x x|
 +---+                      x x|
 |                          x x|
 |                          x x|
@@ -52,7 +52,7 @@ USBCONNECTION:
 |                          x x|
 |                          x x|
 +---+                      x x|
-|   |HDKI1                 x x|
+|   |HDMI1                 x x|
 +---+                      x x|
 |                          x x|
 |                          x x|
@@ -85,7 +85,7 @@ SERIALCONNECTION:
 |                          x x|
 |                          x x|
 +---+                      x x|
-|   |HDKI1                 x x|
+|   |HDMI1                 x x|
 +---+                      x x|
 |                          x x|
 |                          x x|
