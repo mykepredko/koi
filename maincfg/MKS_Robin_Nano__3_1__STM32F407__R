@@ -8,7 +8,6 @@ BUILTINCAN:
 FIRMWAREFLASH:SD Card
 FIRMWARENAME:Robin_nano35.bin
 PRINTERCFG:generic-mks-robin-nano-v3
-KLIPPERSERIALCONFIGURATION:
 KLIPPERUSBCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
