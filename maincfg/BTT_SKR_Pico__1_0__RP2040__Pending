@@ -9,12 +9,7 @@ USBPORT:USB_DP/USB_DN
 BUILTINCAN:
 FIRMWAREFLASH:MSS
 FIRMWARENAME:firmware.bin
-KLIPPERPRINTERCFG:generic-bigtreetech-skr-pico-v1.0
-KLIPPERSERIALCONFIGURATION:
-[*] Enable extra low-level configuration options
-Micro-controller Architecture (Raspberry Pi RP2040) --->
-Communication interface (Serial (on UART0 GPIO1/GPIO0))
-(250000) Baud rate for serial port
+PRINTERCFG:generic-bigtreetech-skr-pico-v1.0
 KLIPPERUSBCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (Raspberry Pi RP2040) --->
