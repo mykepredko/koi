@@ -7,7 +7,7 @@ USBPORT:PA11/PA12
 BUILTINCAN:
 FIRMWAREFLASH:SD Card
 FIRMWARENAME:firmware.bin
-PRINTERCFG: generic-bigtreetech-skr-mini-e3-v2.0
+PRINTERCFG:generic-bigtreetech-skr-mini-e3-v2.0
 KLIPPERUSBCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
