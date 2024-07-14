@@ -8,7 +8,6 @@ BUILTINCAN:
 FIRMWAREFLASH:SD Card
 FIRMWARENAME:firmware.bin
 PRINTERCFG:generic-bigtreetech-skr-mini-e3-v3.0
-KLIPPERSERIALCONFIGURATION:
 KLIPPERUSBCONFIGURATION:
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32) --->
